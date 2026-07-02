@@ -1,1 +1,3 @@
 # RazorPages
+
+Using .NET Core
