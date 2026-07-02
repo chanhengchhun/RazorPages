@@ -1,0 +1,10 @@
+﻿# IDE
+.idea/
+
+# .NET
+bin/
+obj/
+Pages/Shared
+
+# wwwroot
+lib/

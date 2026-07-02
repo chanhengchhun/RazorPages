@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["WelcomeMessage"] = "Welcome to ASP.NET!";
+
+    var thanksMessage = "Thanks for visiting!";
+
+    string Greeting()
+    {
+        return ViewData["WelcomeMessage"] + " " + thanksMessage;
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    @if (Model.ShowGreeting)
+    {
+        <p>@Greeting()</p>
+    }
+    
+    here are some other project types to explore:
+    
+    <ul>
+        @foreach (var projectType in Model.OtherProjectTypes)
+        {
+            <li>@projectType</li>
+        }
+    </ul>
+</div>
