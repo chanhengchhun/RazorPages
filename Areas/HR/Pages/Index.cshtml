@@ -1,6 +1,11 @@
-﻿@page
+﻿@page "{name?}/{id?}"
 @model razor_pages.HR.IndexModel
 @{
 }
 
 <h1>Greeting from the HR pages!</h1>
+
+@if (@Model.Name is not null)
+{
+    <h3>Welcome @Model.Name. Your employee ID is @Model.ID.</h3>
+}
