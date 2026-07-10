@@ -1,4 +1,4 @@
-﻿# IDE
+# IDE
 .idea/
 
 # .NET
@@ -7,3 +7,7 @@ obj/
 
 # wwwroot
 lib/
+
+# Node
+node_modules/
+
